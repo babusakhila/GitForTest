@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class AddCart {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -19,6 +19,7 @@ public class AddCart {
 		WebElement username = driver.findElement(By.id("user-name"));
 		
 		username.sendKeys("standard_user");
+		Thread.sleep(200);
 		
 		
 		WebElement password = driver.findElement(By.id("password"));
