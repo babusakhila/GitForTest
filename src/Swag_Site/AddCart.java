@@ -21,6 +21,7 @@ public class AddCart {
 		username.sendKeys("standard_user");
 		Thread.sleep(200);
 		
+		System.out.println("changes to be commintted to master");
 		
 		WebElement password = driver.findElement(By.id("password"));
 		
